@@ -10,7 +10,10 @@ std::uniform_int_distribution<size_t> dist(0, 100);
 
 int main(void)
 {
+	while (true)
+	{
 		GameManager gm(20, dist(mt) % 20, dist(mt) % 20);
 		gm.GameLoop();
+	}
 	return 0;
 }
