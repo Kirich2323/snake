@@ -12,7 +12,7 @@
 #define TURN_TIME_MILISECONDS 400
 #define MIN_TURN_TIME_MILISECONDS 150
 
-std::map<int, vec2i> directions = { 
+static std::map<int, vec2i> directions = { 
 	{77, vec2i(1, 0)},
 	{80, vec2i(0, 1)},
 	{75, vec2i(-1, 0)},
