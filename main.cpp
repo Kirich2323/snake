@@ -4,9 +4,13 @@
 
 using namespace std;
 
+std::random_device rd;
+std::mt19937 mt(rd());
+std::uniform_int_distribution<size_t> dist(0, 100);
+
 int main(void)
 {
-	GameManager gm(20, 5, 5);
-	gm.GameLoop();
+		GameManager gm(20, dist(mt) % 20, dist(mt) % 20);
+		gm.GameLoop();
 	return 0;
 }
